@@ -1,0 +1,395 @@
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url(Futura/FuturaPTMedium.otf);
+
+}
+@font-face{
+    font-family: futura-pt-heading;
+    src: url(Futura/FuturaPTBook.otf);
+}
+
+body{
+    background: rgba(0,0,0,0.1);
+    font-family: futura-pt;
+
+}
+
+.container{
+    background: white;
+    display: flex;
+    max-width: 90vw;
+    margin: 0 auto;
+    flex-direction: column;
+    position:relative;
+    top: -0.5em;
+    z-index: -5;
+    border: 2px solid rgba(0,0,0,0.1);
+
+}
+
+.main-content{
+    flex: 1;
+    padding-bottom: 7rem;
+}
+
+.header-nav{
+    display:grid;
+    grid-template-columns: 95px repeat(7, 70px) 1fr;
+    grid-template-rows: 40px 5px 50px;
+    padding-top: 1em;
+    margin-bottom: 1em;
+    gap: 5px;
+    font-size: 1.2em;
+ 
+}
+
+.nav-item{
+    text-align: center;
+    padding-top: 0.1em;
+    padding-left: 1.5em;
+    
+
+}
+.nav-item a, .nav-item-right a, .nav-item-bottom-about a, .nav-item-bottom-jobs a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.2em;
+}
+
+.header-logo {
+    background-image: url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/images/ableton-hallmark.ef5355379032.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-left: 2em;
+}
+
+.nav-item-right{
+    text-align: right;
+    padding-right: 1.5em;
+   
+
+}
+.nav-item-right a {
+    margin-right: 0.5em;
+    font-size: 16px;
+}
+.blue{
+    display: inline;
+}
+.blue a{
+    color: blue;
+    font-size: 1.2em;
+}
+.border{
+    grid-column: 1/10;
+    grid-row: 2;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+}
+
+.nav-item-bottom-about, .nav-item-bottom-jobs{
+    margin-top: 1em;
+    padding-left: 2em;
+
+
+}
+.nav-item-bottom-jobs{
+    padding-left: 1em;
+}
+.nav-item-bottom-jobs a, .nav-item-bottom-about a{
+    font-size: 16px;
+}
+
+.header-content{
+    margin: 0 auto;
+}
+.header-content-background{
+    width: 76vw;
+    height: 90.9vh;
+    background-image: url(https://ableton-production.imgix.net/about/header.jpg?auto=format&dpr=2&fit=crop&fm=jpg&h=824&ixjsv=1.1.3&q=50&w=1295) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+}
+.header-content-background h1{
+    position: relative;
+    color: #ff764d;
+    top: 40%;
+    left: 35%;
+    font-size: 8.5em;
+}
+
+.content-font {
+   padding-left: 22%;
+   padding-right: 22%;
+   margin-top: 9rem;
+   margin-bottom: 10rem;
+   font-family: futura-pt-heading;
+
+
+}
+.content-font h1{
+    font-size: 1.85rem;
+    line-height: 1.4em;
+}
+.content-font a{
+    text-decoration: none;
+    color:blue;
+    font-size: 1em;
+}
+.content-font p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+#content-section-1{
+    position:relative;
+    height: 49rem;
+    width: inherit;
+    z-index: -3;
+
+
+}
+.c-s-1-background {
+    background: #fbffa7;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 40%;
+    text-indent: -2999px;
+    z-index: -1;
+}
+.c-s-1-img-1{
+    background-image: url(https://ableton-production.imgix.net/about/photo-2.jpg?dpr=2&fit=crop&h=400&ixjsv=1.1.3&q=50&w=533);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    height: 40vh;
+    width: 35vw;
+    top: 25%;
+    left: 55%;
+  
+}
+.c-s-1-img-2{
+    background-image: url(https://ableton-production.imgix.net/about/photo-1.jpg?dpr=2&fit=crop&h=667&ixjsv=1.1.3&q=50&w=667);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 40vw;
+    height: 60vh;
+    top: 12%;
+    left: 0%;
+    margin-left: 5vw;
+    z-index: 10;
+}
+#content-section-2{
+    color: black;
+    background: blue;
+    margin: 0 auto;
+    width: 50%;
+    height: 15em;
+    box-shadow: -3px 2px 1px rgba(0,0,0,0.3);
+    
+}
+
+#content-section-2 h1{
+    position: relative;
+    top: 30%;
+    right: -2em;
+    text-align: right;
+    font-size: 4rem;
+}
+
+#content-section-3{
+    height: 75rem;
+    position:relative;
+    overflow:hidden;
+}
+
+.c-s-3-background{
+background: #b6ffc0;
+position: absolute;
+height: 75rem;
+width: 60rem;
+z-index: -2;
+
+}
+
+
+#content-section-3 img{
+    position:absolute;
+    display: block;
+    
+}
+.cs3img3{
+    right: 6em;
+    width: 40%;
+    top: 26%;
+}
+.cs3img1, .cs3img2{
+    width: 37%;
+    margin-top: 10em;
+    left: 0;
+    margin-left: 6em;
+}
+
+.cs3img2{
+    bottom: 10%;
+}
+
+#content-section-4{
+    display:flex ;
+    margin: 0 auto;
+}
+.c-s-4-img{
+    width: 85%;
+    margin: 0 auto;
+}
+
+#content-section-5{
+   position:relative;
+   height: 60rem;
+    
+}
+.c-s-5-background{
+    position: absolute;
+    background: #d5b3ff;
+    top: 0;
+    bottom:1rem;
+    left: 13rem;
+    right: 13rem;
+}
+
+#content-section-5 img{
+    position: absolute;
+    display: block;
+    z-index: 0;
+}
+
+.c-s-5-img-1{
+    top: 30%;
+    left: 5rem;
+    width: 35%;
+   
+}
+.c-s-5-img-2{
+    right: 0;
+    
+    top: 20%;
+    width: 45%;
+    
+}
+
+.content-section-6{
+    display:flex;
+    justify-content:center;
+    height:70vh;
+     background: blue;
+    width: 70vw;
+    margin: 0 auto;
+
+}
+
+.content-image, .content-text{
+    background: #b1c5ff;
+    flex:50%;
+    text-align:center;
+    padding-top:15%;
+    padding-left: 7%;
+    
+
+}
+.content-image{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(https://ableton-production.imgix.net/about/photo-8.jpg?crop=right&dpr=2&fit=crop&h=620&ixjsv=1.1.3&q=50&w=620);
+}
+.content-text a{
+    text-decoration: none;
+    color:blue;
+    
+}
+.content-text h3{
+    font-size: 1.8rem;
+    text-align: left;
+    font-family: futura-pt-heading;
+    padding-right: 5rem;
+    line-height: 2.5rem;
+}
+
+.footer{
+    border-top: 1px solid rgb(0,0,0,0.1);
+    padding-top: 5rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    margin-bottom: 2rem;
+    
+}
+.footer-heading{
+    font-size: 4.5rem;
+    padding-left: 0.5em;
+
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-family: futura-pt-heading, sans-serif;
+    align-content: flex-start;
+}
+
+.footer-list{
+    flex: 33%;
+    list-style: none;
+  
+    
+}
+.footer-list li {
+    font-size: 1rem;
+}
+.footer-email{
+    flex: 33%;
+
+}
+.footer-list h5{
+    margin: 0;
+    font-size: 1.1rem;
+}
+.footer-email p{
+    margin: 0;
+    padding: 0;
+}
+.footer-email h4{
+    margin-top: 0.7em;
+    padding: 0;
+}
+.footer-email h4, .footer-language h3{
+    font-size: 1.1rem;
+}
+
+.footer-language{
+    flex:33%;
+}
+
+select{
+    font-family: futura-pt;
+}
+text{
+    border-radius: 0px;
+    background-color: gray;
+}
+input #submit{
+    font-family: futura-pt,sans-serif;
+}
+    

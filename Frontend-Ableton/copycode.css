@@ -1,0 +1,268 @@
+.ab-header{
+    width: 80rem ;
+    height: 50.9rem;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(https://ableton-production.imgix.net/about/header.jpg?auto=format&dpr=2&fit=crop&fm=jpg&h=824&ixjsv=1.1.3&q=50&w=1295) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color:blue;
+}
+
+.ab-header-logo{
+    position: relative;
+    padding-top: 1.3em;
+    padding-left: 3.1em;
+    z-index: 1;
+    font-size: 8.5em;
+    font-family: futura-pt, sans-serif;
+    color: #ff764d;
+}
+
+.ab-nav-submenu{
+    grid-column: 1/5;
+    font-size: .8em;
+    margin-top: 1.2em;
+    margin-left: -3em;
+
+}
+.ab-nav-submenu a{
+    margin-right: 50px;
+}
+.lol {
+display: flex;
+grid-template-columns: 50px repeat(8, 80px) 1fr;
+grid-template-rows: 40px 10px minmax(50px, auto);
+text-align: center;
+margin-bottom: 10em;
+padding-top: 1.2em;
+font-family: futura-pt,sans-serif;
+font-size: 1.2em;
+}
+
+.ab-nav-container a{
+    text-decoration: none;
+    color:black;
+}
+.ab-logo{
+    grid-column: 1/3;
+
+}
+.ab-logo img {
+    width: 45%;
+}
+.ab-nav-right{
+    grid-column: 10;
+    grid-row: 1;
+    text-align: right;
+    padding-right: 1.5em;
+    
+}
+.ab-nav-right a{
+    font-size: 16px;
+}
+.ab-nav-right-text{
+    display: inline;
+    margin-right: .9em;
+    color:blue;
+}
+.border{
+    grid-column: 1/11;
+    grid-row: 2;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1) ;
+}
+
+
+@font-face {
+    font-family: futura-pt;
+    src: url(Futura/FuturaPTMedium.otf);
+
+}
+@font-face{
+    font-family: futura-pt-heading;
+    src: url(Futura/FuturaPTBook.otf);
+}
+@font-face{
+    font-family: futura-pt-paragraph;
+    src:url(Futura/FuturaPTLight.otf);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background: rgba(0,0,0,0.1);
+}
+
+.ab-main-page{
+    background-color: white;
+    margin: 0 auto;
+    max-width: 100rem;
+    position:relative;
+    top: -10px;
+}
+
+.ab-nav-container{
+   display: grid; 
+   grid-template-columns: 50px repeat(8, 80px) 1fr;
+   grid-template-rows: 50px 5px minmax(50px, auto);
+   background-color:lightblue;
+   
+   
+    
+}
+
+
+.ab-nav-right{
+    grid-column: 7/11;
+    grid-row: 1;
+    text-align:right;
+}
+
+
+
+.ab-main-content-text{
+    width: 100%;
+    padding-left: 22%;
+    padding-right: 22%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+}
+.ab-main-content-text h2{
+    font-family: futura-pt-heading,sans-serif;
+    font-size: 2rem;
+    line-height: 1.4em;
+}
+.ab-main-content-text p {
+    font-family: futura-pt-heading,sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+.ab-main-content-text a{
+    text-decoration: none;
+    color:blue;
+}
+
+.ab-content-section-1{
+    position: relative;
+    
+}
+.ab-content-section-1 div{
+    text-indent: -29999px;
+}
+
+.ab-content-lemonade{
+    background: #fbffa7;
+    position:relative;
+    display: inline-block;    
+    width: 65%;
+    margin-left: 31rem;
+    height:47rem;
+}
+.ab-content-img-1{
+    width:35rem;
+    position: absolute;
+    height: 35rem;
+    top:7rem;
+    left: 7rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://ableton-production.imgix.net/about/photo-1.jpg?dpr=2&fit=crop&h=553&ixjsv=1.1.3&q=50&w=553);
+    
+}
+.ab-content-img-2{
+    background-image: url(https://ableton-production.imgix.net/about/photo-2.jpg?dpr=2&fit=crop&h=332&ixjsv=1.1.3&q=50&w=442);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30rem;
+    height: 20rem;
+    position:absolute;
+    top: 12rem;
+    left: 50rem;
+}
+
+#ab-content-section-3{
+    font-family: futura-pt,sans-serif;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+}
+
+.ab-content-section-4{
+    height: 75rem;
+    position: relative;
+    overflow: hidden;
+
+}
+#ab-content-section-4-img-wrapper-background{
+    background: #b6ffc0;
+    position: absolute;
+    height: 75rem;
+    width: 60rem;
+    z-index: 0;
+}
+.ab-content-section-4 img{
+    position: absolute;
+    display: block;
+    z-index: 1;
+}
+.ab-content-img-5{
+    right: 0;
+    top: 26%;
+    margin-right:12rem;
+    transform: scale(1.4);
+}
+
+.ab-content-img-3,.ab-content-img-4{
+    margin-left: 12em;
+    margin-top: 10em;
+    transform: scale(1.4);
+}
+.ab-content-img-4{
+    bottom: 15%;
+}
+
+#ab-content-section-5{
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+    text-align: center;
+
+}
+#ab-content-section-5 img {
+    transform: scale(1.3);
+    
+}
+
+#ab-content-section-6{
+    position: relative;
+    width: 100%;
+    height: 60rem;
+}
+
+#ab-content-section-img-6-wrapper-background{
+    position: absolute;
+    background-color: #d5b3ff;
+    top: 0;
+    bottom: 0;
+    left: 15rem;
+    right: 15rem;
+   
+}
+#ab-content-section-6 img {
+    position: absolute;
+    display: block;
+    z-index: 0;
+}
+.ab-content-img-6{
+    top: 40%;
+    left: 10rem; 
+    transform: scale(1.3); 
+}
+
+.ab-content-img-7{
+    right: 0;
+    margin-right: 6.4rem;
+    top: 25%;
+    transform: scale(1.4);
+}
